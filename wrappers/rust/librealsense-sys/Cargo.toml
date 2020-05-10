@@ -1,0 +1,18 @@
+[package]
+name = "librealsense-sys"
+version = "0.1.0"
+authors = ["Ross Lannen <ross.lannen@gmail.com>"]
+edition = "2018"
+links = "realsense"
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+cc = { version = "1.0", features = ["parallel"] }
+pkg-config = "0.3"
+bindgen = "0.53"
+
+[features]
+static = []
+dynamic = []
